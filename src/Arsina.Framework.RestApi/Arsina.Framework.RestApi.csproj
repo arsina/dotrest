@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.2.3-beta</Version>
+    <Authors>Vahid Naderi</Authors>
+    <Company>arsina</Company>
+    <PackageReleaseNotes>Minor fix</PackageReleaseNotes>
+    <Description>It's a library to help develop rest apis on .net core</Description>
+    <Copyright>Copyright © arsina 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>arsinaalogo.jpg</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Users\Vahid\Pictures\arsinaalogo.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+</Project>
