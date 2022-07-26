@@ -4,9 +4,13 @@ using System.Text;
 
 namespace Arsina.Framework.RestApi.Results
 {
-	public class SaveResult<T> : ResultBase
-	{
-		public SaveResult() : base(false, null) { }
-		public SaveResult(bool isSuccessful, string message, T data) : base(isSuccessful, message) { }
-	}
+    public class SaveResult<T> : ResultBase
+    {
+        public SaveResult() : base(false, null) { }
+        public SaveResult(bool isSuccessful, string message, T data) : base(isSuccessful, message)
+        {
+            this.Data = data;
+        }
+        public T Data { get; set; }
+    }
 }
